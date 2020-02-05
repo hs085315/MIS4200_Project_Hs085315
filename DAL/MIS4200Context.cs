@@ -18,9 +18,9 @@ namespace MIS4200_Project_Hs085315.DAL
             // Include each object here. The value inside <> is the name of the class,
             // the value outside should generally be the plural of the class name
             // and is the name used to reference the entity in code
-            public DbSet<Order> Orders { get; set; }
-            public DbSet<Customer> Customers { get; set; }
-            public DbSet<Product> Products { get; set; }
-            public DbSet<OrderDetail> OrderDetails { get; set; }
+            public DbSet<Student> Students { get; set; }
+            public DbSet<Course> Courses { get; set; }
+            public DbSet<Grade> Grades { get; set; }
+            // public DbSet<OrderDetail> OrderDetails { get; set; }
         }
     }
