@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using MIS4200_Project_Hs085315.Models;
 
 namespace MIS4200_Project_Hs085315.DAL
 {
-    public class MIS4200Context
-    {
+
         public class MIS4200Context : DbContext // inherits from DbContext
         {
             public MIS4200Context() : base("name=DefaultConnection")
@@ -23,4 +24,3 @@ namespace MIS4200_Project_Hs085315.DAL
             public DbSet<OrderDetail> OrderDetails { get; set; }
         }
     }
-}

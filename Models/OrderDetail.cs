@@ -18,6 +18,6 @@ namespace MIS4200_Project_Hs085315.Models
 
         // the next two properties link the orderDetail to the Product
         public int productID { get; set; }
-        public virtual Product { get; set; }
+        public virtual Product Product { get; set; }
     }
 }
