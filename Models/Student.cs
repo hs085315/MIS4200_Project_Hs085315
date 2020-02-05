@@ -8,8 +8,8 @@ namespace MIS4200_Project_Hs085315.Models
     public class Student
     {
         public int studentId { get; set; }
-        public string firstName { get; set; }
-        public string lastName { get; set; }
+        public string studentFirstName { get; set; }
+        public string studentLastName { get; set; }
         public string email { get; set; }
         public string phone { get; set; }
         public DateTime studentSince { get; set; }
@@ -22,11 +22,11 @@ namespace MIS4200_Project_Hs085315.Models
         // (the object name and the local name do not have to be the same)
         public ICollection<Course> Course { get; set; }
 
-        public string fullName
+        public string studentFullName
         {
             get
             {
-                return firstName + ", " + lastName;
+                return studentFirstName + ", " + studentLastName;
             }
         }
     }
