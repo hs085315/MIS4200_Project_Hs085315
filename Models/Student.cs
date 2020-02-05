@@ -20,7 +20,7 @@ namespace MIS4200_Project_Hs085315.Models
         // (the name inside the <> is the object name),
         // and the local name of the collection will be Order
         // (the object name and the local name do not have to be the same)
-        public ICollection<Course> Courses { get; set; }
+        public ICollection<Course> Course { get; set; }
 
         public string fullName
         {
