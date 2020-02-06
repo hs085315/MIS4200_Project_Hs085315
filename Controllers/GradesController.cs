@@ -50,7 +50,7 @@ namespace MIS4200_Project_Hs085315.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "gradeId,grade,courseId,studentId")] Grade grade)
+        public ActionResult Create([Bind(Include = "gradeId,courseGrade,courseId,studentId")] Grade grade)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace MIS4200_Project_Hs085315.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "gradeId,grade,courseId,studentId")] Grade grade)
+        public ActionResult Edit([Bind(Include = "gradeId,courseGrade,courseId,studentId")] Grade grade)
         {
             if (ModelState.IsValid)
             {

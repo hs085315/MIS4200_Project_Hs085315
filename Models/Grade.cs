@@ -9,7 +9,7 @@ namespace MIS4200_Project_Hs085315.Models
     {
         public int gradeId { get; set; }
 
-        public string grade { get; set; }
+        public string courseGrade { get; set; }
 
         // public decimal price { get; set; }
 
