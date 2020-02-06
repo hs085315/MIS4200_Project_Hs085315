@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Web;
 using MIS4200_Project_Hs085315.Models;
@@ -25,5 +26,13 @@ namespace MIS4200_Project_Hs085315.DAL
             public DbSet<Order> Orders { get; set; }
             public DbSet<Customer> Customers { get; set; }
             public DbSet<Product> Products { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+
+            base.OnModelCreating(modelBuilder);
+
         }
+    }
 }
