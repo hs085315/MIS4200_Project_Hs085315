@@ -12,8 +12,9 @@ namespace MIS4200_Project_Hs085315.DAL
         {
             public MIS4200Context() : base("name=DefaultConnection")
             {
-                // this method is a 'constructor' and is called when a new context is created
-                // the base attribute says which connection string to use
+            // this method is a 'constructor' and is called when a new context is created
+            // the base attribute says which connection string to use
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<MIS4200Context, MIS4200_Project_Hs085315.Migrations.MISContext.Configuration>("DefaultConnection"));
             }
             // Include each object here. The value inside <> is the name of the class,
             // the value outside should generally be the plural of the class name
