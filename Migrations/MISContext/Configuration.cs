@@ -10,6 +10,7 @@ namespace MIS4200_Project_Hs085315.Migrations.MISContext
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
             MigrationsDirectory = @"Migrations\MISContext";
             ContextKey = "MIS4200_Project_Hs085315.DAL.MIS4200Context";
         }
