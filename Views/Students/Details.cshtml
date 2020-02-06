@@ -1,0 +1,58 @@
+﻿@model MIS4200_Project_Hs085315.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.studentFirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.studentFirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.studentLastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.studentLastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.studentSince)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.studentSince)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.studentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
