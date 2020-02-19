@@ -8,6 +8,7 @@ namespace MIS4200_Project_Hs085315.Models
 {
     public class Course
     {
+        public System.Guid CID { get; set; }
         public int courseId { get; set; }
 
         [Display(Name = "Course description")]

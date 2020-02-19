@@ -8,21 +8,17 @@ namespace MIS4200_Project_Hs085315.Models
 {
     public class Grade
     {
+        public System.Guid GID { get; set; }
         public int gradeId { get; set; }
         
         [Display (Name="Course grade")]
         [Required(ErrorMessage = "Course grade required")]
         [StringLength(20)]
         public string courseGrade { get; set; }
-
-        // public decimal price { get; set; }
-
-        // the next two properties link the orderDetail to the Order
-
-        public int courseId { get; set; }
-
         [Display(Name = "Course")]
         [Required]
+
+        public int courseId { get; set; }
 
         public virtual Course Course { get; set; }
 

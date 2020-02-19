@@ -28,8 +28,8 @@ namespace MIS4200_Project_Hs085315.Models
 
         [Display(Name = "Mobile phone number")]
         [DataType(DataType.PhoneNumber)]
-        [RegularExpression(@"^(\(\d{3}\) | \d{3}-)\d{3}-\d{4}$",
-            ErrorMessage ="Phone numbers must be in the format xxx-xxx-xxxx")]
+        [RegularExpression(@"^(\(\d{3}\) |\d{3}-)\d{3}-\d{4}$",
+            ErrorMessage ="Phone numbers must be in the format (xxx) xxx-xxxx or xxx-xxx-xxxx")]
         public string phone { get; set; }
 
         [Display(Name = "What date did you start school?")]
