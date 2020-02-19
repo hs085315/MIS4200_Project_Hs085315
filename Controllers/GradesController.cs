@@ -40,8 +40,10 @@ namespace MIS4200_Project_Hs085315.Controllers
         // GET: Grades/Create
         public ActionResult Create()
         {
+            ViewBag.studentId = new SelectList(db.Students, "studentID", "studentFullName");
+            var students = db.Students.OrderBy(c => c.studentLastName).ThenBy(c => c.studentFirstName);
             ViewBag.courseId = new SelectList(db.Courses, "courseId", "description");
-            ViewBag.studentId = new SelectList(db.Students, "studentId", "studentFirstName");
+            ViewBag.studentId = new SelectList(db.Students, "studentId", "studentFullName");
             return View();
         }
 
