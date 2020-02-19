@@ -23,7 +23,7 @@ namespace MIS4200_Project_Hs085315.Models
         [Display(Name = "Mobile phone number")]
         public string phone { get; set; }
 
-        [Display(Name = "When did you join this school?")]
+        [Display(Name = "What date did you start school?")]
         public DateTime studentSince { get; set; }
         public ICollection<Grade> Grade { get; set; }
 

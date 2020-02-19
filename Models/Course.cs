@@ -10,7 +10,11 @@ namespace MIS4200_Project_Hs085315.Models
     {
         public int courseId { get; set; }
 
+        [Display(Name = "Course description")]
+
         public string description { get; set; }
+
+        [Display(Name = "Date of first class")]
 
         public DateTime courseDate { get; set; }
 
