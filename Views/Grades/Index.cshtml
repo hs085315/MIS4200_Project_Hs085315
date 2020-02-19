@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Course Grades</h2>
+<h2>Course Grades <span class="glyphicon glyphicon-folder-open"></span></h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -35,9 +35,10 @@
             @Html.DisplayFor(modelItem => item.courseGrade)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.gradeId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.gradeId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.gradeId })
+            @Html.ActionLink("Edit", "Edit", new { id = item.gradeId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.gradeId })
+            <span class="glyphicon glyphicon-eye-open"></span>||
+            @Html.ActionLink("Delete", "Delete", new { id = item.gradeId })
         </td>
     </tr>
 }

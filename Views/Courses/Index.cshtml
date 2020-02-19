@@ -4,7 +4,7 @@
     ViewBag.Title = "";
 }
 
-<h2>Courses Offered</h2>
+<h2>Courses Offered <span class="glyphicon glyphicon-education"></span></h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -31,9 +31,10 @@
             @Html.DisplayFor(modelItem => item.courseDate)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.courseId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.courseId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.courseId })
+            @Html.ActionLink("Edit", "Edit", new { id = item.courseId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.courseId })
+            <span class="glyphicon glyphicon-eye-open"></span>||
+            @Html.ActionLink("Delete", "Delete", new { id = item.courseId })
         </td>
     </tr>
 }
