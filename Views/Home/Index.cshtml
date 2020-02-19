@@ -27,10 +27,18 @@
             Communications and Public Relations Director as well as the
             Information Technology Director.
         </p>
-        Example Pages For:<br />
-        @Html.ActionLink("Students", "Index", "Students")<br />
-        @Html.ActionLink("Courses", "Index", "Courses")<br />
-        @Html.ActionLink("Grades", "Index", "Grades")
+        
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+            Software Development Example
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a/@Html.ActionLink("Students", "Index", "Students")</a></li>
+           <li><a/@Html.ActionLink("Courses", "Index", "Courses")</a></li>
+            <li><a/@Html.ActionLink("Grades", "Index", "Grades")</a></li>
+        </ul>
+    </div>
 
     </div>
     <div class="col-md-4">
