@@ -34,7 +34,7 @@ namespace MIS4200_Project_Hs085315.Models
 
         [Display(Name = "What date did you start school?")]
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:d}" , ApplyFormatInEditMode =true)]
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyy}" , ApplyFormatInEditMode =true)]
         public DateTime studentSince { get; set; }
         public ICollection<Grade> Grade { get; set; }
 

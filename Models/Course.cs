@@ -18,7 +18,7 @@ namespace MIS4200_Project_Hs085315.Models
 
         [Display(Name = "Date of first class")]
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyy}", ApplyFormatInEditMode = true)]
 
         public DateTime courseDate { get; set; }
 
